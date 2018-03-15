@@ -5,6 +5,8 @@ A benchmark of the impact of insertion order on Rust's standard library HashMap 
 ## Results
 Running on an Intel Core i5-6600K with 16GB of DDR4 RAM.
 
+![Graph](/graph.png?raw=true)
+
 ```
 running 21 tests
 running 21 tests
@@ -31,5 +33,3 @@ test tests::bench__8M_sorted_during_bench  ... bench: 546,873,318 ns/iter (+/- 2
 test tests::bench__8M_unsorted             ... bench: 839,765,298 ns/iter (+/- 25,778,730)
 
 ```
-
-![Graph](/graph.png?raw=true)
