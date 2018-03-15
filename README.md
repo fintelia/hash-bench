@@ -9,7 +9,6 @@ Running on an Intel Core i5-6600K with 16GB of DDR4 RAM.
 
 ```
 running 21 tests
-running 21 tests
 test tests::bench_002K_sorted              ... bench:      39,292 ns/iter (+/- 2,622)
 test tests::bench_002K_sorted_during_bench ... bench:      90,059 ns/iter (+/- 3,601)
 test tests::bench_002K_unsorted            ... bench:      39,072 ns/iter (+/- 2,469)
