@@ -1,13 +1,15 @@
 # hash-bench
 
-A benchmark of the impact of insertion order and hash computation on Rust's standard library HashMap implementation. To gain access to some low level functionality on HashMap, these benchmarks actually use a [fork](https://github.com/fintelia/rahashmap/tree/no-reorder) of the standard library version, though performance should not be impacted.
+A benchmark of the impact of insertion order and hash computation on Rust's standard library HashMap implementation. 
+
+Note: To gain access to some low level functionality on HashMap, these benchmarks actually use a [fork](https://github.com/fintelia/rahashmap/tree/no-reorder) of the standard library version, though performance should not be impacted.
 
 ## Results
 Running on an Intel Core i5-6600K with 16GB of DDR4 RAM.
 
 ![Graph](/graph.png?raw=true)
 
-## Key Take Aways
+## Key Insights
 
 * Creating a HashMap from a sorted Vec is much faster than creating from an unsorted Vec.
 * Sorting the entries at runtime is too slow to be worth it (provided the create operation only happens once).
