@@ -7,6 +7,14 @@ Running on an Intel Core i5-6600K with 16GB of DDR4 RAM.
 
 ![Graph](/graph.png?raw=true)
 
+## Key Take Aways
+
+* Creating a HashMap from a sorted Vec is much faster than creating from an unsorted Vec.
+* Sorting the entries at runtime is too slow to be worth it (provided the create operation only happens once).
+* Precomputing all the hashes then inserting into a HashMap is about 25% faster than computing hashes as the keys are inserted.
+
+## Raw Output
+
 ```
 running 35 tests
 test tests::bench_002K_sorted                 ... bench:      25,989 ns/iter (+/- 817)
