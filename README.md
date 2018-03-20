@@ -1,6 +1,6 @@
 # hash-bench
 
-A benchmark of the impact of insertion order on Rust's standard library HashMap implementation.
+A benchmark of the impact of insertion order and hash computation on Rust's standard library HashMap implementation. To gain access to some low level functionality on HashMap, these benchmarks actually use a [fork](https://github.com/fintelia/rahashmap/tree/no-reorder) of the standard library, though performance should not be impacted.
 
 ## Results
 Running on an Intel Core i5-6600K with 16GB of DDR4 RAM.
